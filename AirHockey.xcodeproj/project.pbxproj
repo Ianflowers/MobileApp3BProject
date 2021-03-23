@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6441F870260A78B80046D61B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6441F86F260A78B80046D61B /* AppDelegate.swift */; };
+		6441F872260A78B80046D61B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6441F871260A78B80046D61B /* SceneDelegate.swift */; };
+		6441F874260A78B80046D61B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6441F873260A78B80046D61B /* ViewController.swift */; };
+		6441F877260A78B80046D61B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6441F875260A78B80046D61B /* Main.storyboard */; };
+		6441F879260A78BC0046D61B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6441F878260A78BC0046D61B /* Assets.xcassets */; };
+		6441F87C260A78BC0046D61B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6441F87A260A78BC0046D61B /* LaunchScreen.storyboard */; };
+		6441F887260A78BC0046D61B /* AirHockeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6441F886260A78BC0046D61B /* AirHockeyTests.swift */; };
+		6441F892260A78BC0046D61B /* AirHockeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6441F891260A78BC0046D61B /* AirHockeyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6441F883260A78BC0046D61B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6441F864260A78B80046D61B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6441F86B260A78B80046D61B;
+			remoteInfo = AirHockey;
+		};
+		6441F88E260A78BC0046D61B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6441F864260A78B80046D61B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6441F86B260A78B80046D61B;
+			remoteInfo = AirHockey;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6441F86C260A78B80046D61B /* AirHockey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirHockey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6441F86F260A78B80046D61B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6441F871260A78B80046D61B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6441F873260A78B80046D61B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6441F876260A78B80046D61B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6441F878260A78BC0046D61B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6441F87B260A78BC0046D61B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6441F87D260A78BC0046D61B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6441F882260A78BC0046D61B /* AirHockeyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirHockeyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6441F886260A78BC0046D61B /* AirHockeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirHockeyTests.swift; sourceTree = "<group>"; };
+		6441F888260A78BC0046D61B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6441F88D260A78BC0046D61B /* AirHockeyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirHockeyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6441F891260A78BC0046D61B /* AirHockeyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirHockeyUITests.swift; sourceTree = "<group>"; };
+		6441F893260A78BC0046D61B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6441F869260A78B80046D61B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6441F87F260A78BC0046D61B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6441F88A260A78BC0046D61B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6441F863260A78B80046D61B = {
+			isa = PBXGroup;
+			children = (
+				6441F86E260A78B80046D61B /* AirHockey */,
+				6441F885260A78BC0046D61B /* AirHockeyTests */,
+				6441F890260A78BC0046D61B /* AirHockeyUITests */,
+				6441F86D260A78B80046D61B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6441F86D260A78B80046D61B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6441F86C260A78B80046D61B /* AirHockey.app */,
+				6441F882260A78BC0046D61B /* AirHockeyTests.xctest */,
+				6441F88D260A78BC0046D61B /* AirHockeyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6441F86E260A78B80046D61B /* AirHockey */ = {
+			isa = PBXGroup;
+			children = (
+				6441F86F260A78B80046D61B /* AppDelegate.swift */,
+				6441F871260A78B80046D61B /* SceneDelegate.swift */,
+				6441F873260A78B80046D61B /* ViewController.swift */,
+				6441F875260A78B80046D61B /* Main.storyboard */,
+				6441F878260A78BC0046D61B /* Assets.xcassets */,
+				6441F87A260A78BC0046D61B /* LaunchScreen.storyboard */,
+				6441F87D260A78BC0046D61B /* Info.plist */,
+			);
+			path = AirHockey;
+			sourceTree = "<group>";
+		};
+		6441F885260A78BC0046D61B /* AirHockeyTests */ = {
+			isa = PBXGroup;
+			children = (
+				6441F886260A78BC0046D61B /* AirHockeyTests.swift */,
+				6441F888260A78BC0046D61B /* Info.plist */,
+			);
+			path = AirHockeyTests;
+			sourceTree = "<group>";
+		};
+		6441F890260A78BC0046D61B /* AirHockeyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6441F891260A78BC0046D61B /* AirHockeyUITests.swift */,
+				6441F893260A78BC0046D61B /* Info.plist */,
+			);
+			path = AirHockeyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6441F86B260A78B80046D61B /* AirHockey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6441F896260A78BC0046D61B /* Build configuration list for PBXNativeTarget "AirHockey" */;
+			buildPhases = (
+				6441F868260A78B80046D61B /* Sources */,
+				6441F869260A78B80046D61B /* Frameworks */,
+				6441F86A260A78B80046D61B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirHockey;
+			productName = AirHockey;
+			productReference = 6441F86C260A78B80046D61B /* AirHockey.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6441F881260A78BC0046D61B /* AirHockeyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6441F899260A78BC0046D61B /* Build configuration list for PBXNativeTarget "AirHockeyTests" */;
+			buildPhases = (
+				6441F87E260A78BC0046D61B /* Sources */,
+				6441F87F260A78BC0046D61B /* Frameworks */,
+				6441F880260A78BC0046D61B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6441F884260A78BC0046D61B /* PBXTargetDependency */,
+			);
+			name = AirHockeyTests;
+			productName = AirHockeyTests;
+			productReference = 6441F882260A78BC0046D61B /* AirHockeyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6441F88C260A78BC0046D61B /* AirHockeyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6441F89C260A78BC0046D61B /* Build configuration list for PBXNativeTarget "AirHockeyUITests" */;
+			buildPhases = (
+				6441F889260A78BC0046D61B /* Sources */,
+				6441F88A260A78BC0046D61B /* Frameworks */,
+				6441F88B260A78BC0046D61B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6441F88F260A78BC0046D61B /* PBXTargetDependency */,
+			);
+			name = AirHockeyUITests;
+			productName = AirHockeyUITests;
+			productReference = 6441F88D260A78BC0046D61B /* AirHockeyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6441F864260A78B80046D61B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					6441F86B260A78B80046D61B = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					6441F881260A78BC0046D61B = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 6441F86B260A78B80046D61B;
+					};
+					6441F88C260A78BC0046D61B = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 6441F86B260A78B80046D61B;
+					};
+				};
+			};
+			buildConfigurationList = 6441F867260A78B80046D61B /* Build configuration list for PBXProject "AirHockey" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6441F863260A78B80046D61B;
+			productRefGroup = 6441F86D260A78B80046D61B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6441F86B260A78B80046D61B /* AirHockey */,
+				6441F881260A78BC0046D61B /* AirHockeyTests */,
+				6441F88C260A78BC0046D61B /* AirHockeyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6441F86A260A78B80046D61B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6441F87C260A78BC0046D61B /* LaunchScreen.storyboard in Resources */,
+				6441F879260A78BC0046D61B /* Assets.xcassets in Resources */,
+				6441F877260A78B80046D61B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6441F880260A78BC0046D61B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6441F88B260A78BC0046D61B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6441F868260A78B80046D61B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6441F874260A78B80046D61B /* ViewController.swift in Sources */,
+				6441F870260A78B80046D61B /* AppDelegate.swift in Sources */,
+				6441F872260A78B80046D61B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6441F87E260A78BC0046D61B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6441F887260A78BC0046D61B /* AirHockeyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6441F889260A78BC0046D61B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6441F892260A78BC0046D61B /* AirHockeyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6441F884260A78BC0046D61B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6441F86B260A78B80046D61B /* AirHockey */;
+			targetProxy = 6441F883260A78BC0046D61B /* PBXContainerItemProxy */;
+		};
+		6441F88F260A78BC0046D61B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6441F86B260A78B80046D61B /* AirHockey */;
+			targetProxy = 6441F88E260A78BC0046D61B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6441F875260A78B80046D61B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6441F876260A78B80046D61B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6441F87A260A78BC0046D61B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6441F87B260A78BC0046D61B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6441F894260A78BC0046D61B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6441F895260A78BC0046D61B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6441F897260A78BC0046D61B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83Y48N8V3R;
+				INFOPLIST_FILE = AirHockey/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CHiK3N.AirHockey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6441F898260A78BC0046D61B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83Y48N8V3R;
+				INFOPLIST_FILE = AirHockey/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CHiK3N.AirHockey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6441F89A260A78BC0046D61B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83Y48N8V3R;
+				INFOPLIST_FILE = AirHockeyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CHiK3N.AirHockeyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirHockey.app/AirHockey";
+			};
+			name = Debug;
+		};
+		6441F89B260A78BC0046D61B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83Y48N8V3R;
+				INFOPLIST_FILE = AirHockeyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CHiK3N.AirHockeyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirHockey.app/AirHockey";
+			};
+			name = Release;
+		};
+		6441F89D260A78BC0046D61B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83Y48N8V3R;
+				INFOPLIST_FILE = AirHockeyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CHiK3N.AirHockeyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AirHockey;
+			};
+			name = Debug;
+		};
+		6441F89E260A78BC0046D61B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83Y48N8V3R;
+				INFOPLIST_FILE = AirHockeyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CHiK3N.AirHockeyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AirHockey;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6441F867260A78B80046D61B /* Build configuration list for PBXProject "AirHockey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6441F894260A78BC0046D61B /* Debug */,
+				6441F895260A78BC0046D61B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6441F896260A78BC0046D61B /* Build configuration list for PBXNativeTarget "AirHockey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6441F897260A78BC0046D61B /* Debug */,
+				6441F898260A78BC0046D61B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6441F899260A78BC0046D61B /* Build configuration list for PBXNativeTarget "AirHockeyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6441F89A260A78BC0046D61B /* Debug */,
+				6441F89B260A78BC0046D61B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6441F89C260A78BC0046D61B /* Build configuration list for PBXNativeTarget "AirHockeyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6441F89D260A78BC0046D61B /* Debug */,
+				6441F89E260A78BC0046D61B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6441F864260A78B80046D61B /* Project object */;
+}
