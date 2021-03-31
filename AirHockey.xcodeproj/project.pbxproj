@@ -99,6 +99,7 @@
 		6410C35E2614F4B70061B600 /* Game Screen */ = {
 			isa = PBXGroup;
 			children = (
+				6C9855B426125B7B003CD855 /* Scoreboard.swift */,
 				64412A64260D0F6000DA9445 /* GameViewController.swift */,
 				6410C3582614F4580061B600 /* Paddle.swift */,
 			);
@@ -152,7 +153,6 @@
 		6441F86E260A78B80046D61B /* AirHockey */ = {
 			isa = PBXGroup;
 			children = (
-				6C9855B426125B7B003CD855 /* Scoreboard.swift */,
 				6441F86F260A78B80046D61B /* AppDelegate.swift */,
 				6441F871260A78B80046D61B /* SceneDelegate.swift */,
 				6441F875260A78B80046D61B /* Main.storyboard */,
