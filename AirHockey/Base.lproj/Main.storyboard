@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -15,13 +16,30 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Air Hockey!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBU-IQ-lHc">
+                                <rect key="frame" x="163" y="263" width="88" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAJ-1q-JEj">
+                                <rect key="frame" x="192" y="433" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <segue destination="oNh-Kw-xK7" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="DZ0-3p-yqO"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-539" y="-17"/>
+            <point key="canvasLocation" x="-539.13043478260875" y="-17.410714285714285"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="4w7-l8-hCp">
@@ -35,30 +53,46 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="P1" translatesAutoresizingMaskIntoConstraints="NO" id="dX5-FK-2PW">
-                                <rect key="frame" x="285" y="717" width="62" height="60"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="P1" translatesAutoresizingMaskIntoConstraints="NO" id="dX5-FK-2PW" customClass="Paddle" customModule="AirHockey" customModuleProvider="target">
+                                <rect key="frame" x="176" y="709" width="62" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="P1"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="UbT-yx-PWt" appends="YES" id="d0z-MH-Mzv"/>
+                                    <outletCollection property="gestureRecognizers" destination="5uP-QP-LE5" appends="YES" id="Jc7-4E-HJR"/>
                                 </connections>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="P2" translatesAutoresizingMaskIntoConstraints="NO" id="fbp-4P-nP1">
-                                <rect key="frame" x="193" y="167" width="62" height="60"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="P2" translatesAutoresizingMaskIntoConstraints="NO" id="fbp-4P-nP1" customClass="Paddle" customModule="AirHockey" customModuleProvider="target">
+                                <rect key="frame" x="176" y="139" width="62" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="P2"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="fEJ-HX-D8Y" appends="YES" id="bal-vQ-R7T"/>
+                                    <outletCollection property="gestureRecognizers" destination="cS7-m6-6Te" appends="YES" id="kS5-N2-2Fm"/>
                                 </connections>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eb2-GW-phh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="P1Paddle" destination="dX5-FK-2PW" id="n9v-43-f84"/>
+                        <outlet property="P1PanGesture" destination="5uP-QP-LE5" id="sA5-NC-qEM"/>
+                        <outlet property="P2Paddle" destination="fbp-4P-nP1" id="yZ9-yM-sTz"/>
+                        <outlet property="P2PanGesture" destination="cS7-m6-6Te" id="MIu-Aq-kEq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Wb-Ss-hfK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="fEJ-HX-D8Y"/>
-                <tapGestureRecognizer id="UbT-yx-PWt"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="5uP-QP-LE5" userLabel="P1 Pan Gesture">
+                    <connections>
+                        <action selector="paddleTouch:" destination="oNh-Kw-xK7" id="MXL-1I-BDO"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="cS7-m6-6Te" userLabel="P2 Pan Gesture">
+                    <connections>
+                        <action selector="paddleTouch:" destination="oNh-Kw-xK7" id="Yeu-BS-kEY"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="340.57971014492756" y="-17.410714285714285"/>
         </scene>
