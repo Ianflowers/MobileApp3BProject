@@ -71,6 +71,13 @@
                                     <outletCollection property="gestureRecognizers" destination="cS7-m6-6Te" appends="YES" id="kS5-N2-2Fm"/>
                                 </connections>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label        yeah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bub-35-s5g">
+                                <rect key="frame" x="20" y="475" width="113" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eb2-GW-phh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -80,6 +87,7 @@
                         <outlet property="P1PanGesture" destination="5uP-QP-LE5" id="sA5-NC-qEM"/>
                         <outlet property="P2Paddle" destination="fbp-4P-nP1" id="yZ9-yM-sTz"/>
                         <outlet property="P2PanGesture" destination="cS7-m6-6Te" id="MIu-Aq-kEq"/>
+                        <outlet property="playerScoreLabel" destination="Bub-35-s5g" id="Urh-HF-OOI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Wb-Ss-hfK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

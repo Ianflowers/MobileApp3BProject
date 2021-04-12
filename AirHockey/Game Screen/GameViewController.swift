@@ -13,10 +13,13 @@ class GameViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet var P1PanGesture: UIPanGestureRecognizer!
     @IBOutlet var P2Paddle: Paddle!
     @IBOutlet var P2PanGesture: UIPanGestureRecognizer!
+    var scoreboard: Scoreboard!
+    @IBOutlet var playerScoreLabel: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        scoreboard = Scoreboard(scoreLabel: playerScoreLabel)
         paddleSetUp()
     }
     
