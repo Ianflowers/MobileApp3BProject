@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -78,9 +79,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPU-7X-HAa">
+                                <rect key="frame" x="363" y="416" width="41" height="62"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="pause.fill" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4Tu-lE-BXS" kind="presentation" id="JLp-px-H4I"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eb2-GW-phh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eb2-GW-phh" firstAttribute="trailing" secondItem="IPU-7X-HAa" secondAttribute="trailing" constant="10" id="YGl-Ba-ket"/>
+                            <constraint firstItem="IPU-7X-HAa" firstAttribute="centerY" secondItem="Nr8-mR-06v" secondAttribute="centerY" id="riK-ba-MA9"/>
+                            <constraint firstItem="IPU-7X-HAa" firstAttribute="top" secondItem="eb2-GW-phh" secondAttribute="top" constant="374" id="s03-Ft-5T0"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="P1Paddle" destination="dX5-FK-2PW" id="n9v-43-f84"/>
@@ -108,11 +123,19 @@
         <scene sceneID="D6c-iY-TEV">
             <objects>
                 <viewController id="4Tu-lE-BXS" customClass="PauseViewController" customModule="AirHockey" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="l9h-uT-cfn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="l9h-uT-cfn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I am a pause screen. Please populate me." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMS-i2-0MP">
+                                <rect key="frame" x="50" y="392" width="315" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="EdT-Ii-kTu"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IZc-vR-Qg6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -154,6 +177,7 @@
         <image name="Background" width="500" height="804"/>
         <image name="P1" width="468" height="468"/>
         <image name="P2" width="468" height="468"/>
+        <image name="pause.fill" catalog="system" width="116" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
