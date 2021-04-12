@@ -25,8 +25,8 @@ class GameViewController: UIViewController, UIGestureRecognizerDelegate {
         P1Paddle.center = CGPoint(x: P2Paddle.center.x, y: P2Paddle.center.x * 3.5)
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         tapGesture.delegate = self
-        P1Paddle.setPaddle(gesture: tapGesture, minX: 32, minY: 476, maxX: 382, maxY: 830)
-        P2Paddle.setPaddle(gesture: tapGesture, minX: 32, minY: 74, maxX: 382, maxY: 417)
+        P1Paddle.setPaddle(name: "P1", gesture: tapGesture, minX: 32, minY: 476, maxX: 382, maxY: 830)
+        P2Paddle.setPaddle(name: "P2", gesture: tapGesture, minX: 32, minY: 74, maxX: 382, maxY: 417)
     }
     
     @IBAction func paddleTouch(_ gesture: UIPanGestureRecognizer) {
