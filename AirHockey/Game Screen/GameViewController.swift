@@ -42,13 +42,9 @@ class GameViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @objc func handleTap(_ gesture: UITapGestureRecognizer) { }
     
+    
+    @IBAction func newGame(unwindSegue: UIStoryboardSegue) { viewDidLoad() }
+    
+    @IBAction func continueGame(unwindSegue: UIStoryboardSegue) { }
 
-}
-
-extension ViewController: UIGestureRecognizerDelegate {
-  
-  func gestureRecognizer(
-    _ gestureRecognizer: UIGestureRecognizer,
-    shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool { return true }
-  
 }

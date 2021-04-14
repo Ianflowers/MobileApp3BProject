@@ -15,7 +15,8 @@ class ResultsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func showResults(unwindSegue: UIStoryboardSegue) { viewDidLoad() }
+    
     /*
     // MARK: - Navigation
 

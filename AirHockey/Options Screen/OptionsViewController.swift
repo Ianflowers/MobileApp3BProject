@@ -15,6 +15,8 @@ class OptionsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func openSettings(unwindSegue: UIStoryboardSegue) { viewDidLoad() }
+
 
     /*
     // MARK: - Navigation
