@@ -20,6 +20,7 @@
 		6441F87C260A78BC0046D61B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6441F87A260A78BC0046D61B /* LaunchScreen.storyboard */; };
 		6441F887260A78BC0046D61B /* AirHockeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6441F886260A78BC0046D61B /* AirHockeyTests.swift */; };
 		6441F892260A78BC0046D61B /* AirHockeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6441F891260A78BC0046D61B /* AirHockeyUITests.swift */; };
+		6CBFEBDB2615048E00F84F2E /* Scoreboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBFEBDA2615048E00F84F2E /* Scoreboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		6441F88D260A78BC0046D61B /* AirHockeyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirHockeyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6441F891260A78BC0046D61B /* AirHockeyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirHockeyUITests.swift; sourceTree = "<group>"; };
 		6441F893260A78BC0046D61B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CBFEBDA2615048E00F84F2E /* Scoreboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scoreboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		6410C35E2614F4B70061B600 /* Game Screen */ = {
 			isa = PBXGroup;
 			children = (
+				6CBFEBDA2615048E00F84F2E /* Scoreboard.swift */,
 				64412A64260D0F6000DA9445 /* GameViewController.swift */,
 				6410C3582614F4580061B600 /* Paddle.swift */,
 			);
@@ -316,6 +319,7 @@
 				64412A65260D0F6000DA9445 /* GameViewController.swift in Sources */,
 				6410C3592614F4580061B600 /* Paddle.swift in Sources */,
 				6441F874260A78B80046D61B /* MenuViewController.swift in Sources */,
+				6CBFEBDB2615048E00F84F2E /* Scoreboard.swift in Sources */,
 				64412A6D260D0FBF00DA9445 /* PauseViewController.swift in Sources */,
 				64412A77260D0FD400DA9445 /* OptionsViewController.swift in Sources */,
 				6441F870260A78B80046D61B /* AppDelegate.swift in Sources */,
@@ -537,7 +541,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 83Y48N8V3R;
+				DEVELOPMENT_TEAM = 4XD9PP3D9P;
 				INFOPLIST_FILE = AirHockeyTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -559,7 +563,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 83Y48N8V3R;
+				DEVELOPMENT_TEAM = 4XD9PP3D9P;
 				INFOPLIST_FILE = AirHockeyTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
