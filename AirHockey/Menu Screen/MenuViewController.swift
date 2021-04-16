@@ -9,13 +9,15 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
+    @IBOutlet var titleLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        titleLabel.adjustsFontSizeToFitWidth = true
     }
     
+    @IBAction func goHome(unwindSegue: UIStoryboardSegue) { viewDidLoad() }
     
-    @IBAction func home(unwindSegue: UIStoryboardSegue) { viewDidLoad() }
-
 }
 
