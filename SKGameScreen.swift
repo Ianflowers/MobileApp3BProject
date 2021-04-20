@@ -49,6 +49,11 @@ class SKGameScreen: SKScene, SKPhysicsContactDelegate {
     //func collision(_ force: CGVector, //get from paddle//) {
     // }
     
+    //Checks for anything off screen
+    //func isOffScreen(node: SKShapeNode) -> Bool {
+        
+    //}
+    
     // create boundries for puck
     func makeBorders() {
         let borderWidth = CGFloat(20.0)
