@@ -16,7 +16,7 @@ class SKGameScreen: SKScene, SKPhysicsContactDelegate {
         //
         //
         makePuck()
-        //
+        makeBorders()
     }
     
     func makePuck() {
@@ -50,6 +50,55 @@ class SKGameScreen: SKScene, SKPhysicsContactDelegate {
     // }
     
     // create boundries for puck
+    func makeBorders() {
+        let borderWidth = CGFloat(20.0)
+        
+        //Left border
+        let leftBorder = SKSpriteNode(color: UIColor.black, size: CGSize(width: borderWidth, height: size.height))
+        leftBorder.position = CGPoint(x: borderWidth, y: frame.height/2)
+        
+        leftBorder.physicsBody = SKPhysicsBody(rectangleOf: leftBorder.size)
+        leftBorder.physicsBody!.isDynamic = false
+        addChild(leftBorder)
+        
+        //Right border
+        let rightBorder = SKSpriteNode(color: UIColor.black, size: CGSize(width: borderWidth, height: size.height))
+        rightBorder.position = CGPoint(x: size.width - borderWidth/2, y: frame.height/2)
+        addChild(rightBorder)
+        
+        rightBorder.physicsBody = SKPhysicsBody(rectangleOf: rightBorder.size)
+        rightBorder.physicsBody!.isDynamic = false
+        addChild(rightBorder)
+        
+        //Table ends
+        let endBorderWidth = (size.width / 2) - 150
+        let endBorderSize = CGSize(width: endBorderWidth, height: borderWidth)
+        let endBorderPhysics = SKPhysicsBody(rectangleOf: endBorderSize)
+        endBorderPhysics.isDynamic = false
+        
+        //Create all of the borders
+        
+        //Bottom Left
+        let bottomLeftBorder = SKSpriteNode(color: UIColor.black, size: endBorderSize)
+        bottomLeftBorder.position = CGPoint(x: endBorderWidth/2, y: borderWidth/2)
+        bottomLeftBorder.physicsBody = endBorderPhysics
+        addChild(bottomLeftBorder)
+        
+        //Bottom Right
+        let bottomRightBorder = bottomLeftBorder.copy() as! SKSpriteNode
+        bottomRightBorder.position = CGPoint(x: size.width - endBorderWidth/2, y: borderWidth/2)
+        addChild(bottomRightBorder)
+        
+        //Top Left
+        let topLeftBorder = bottomLeftBorder.copy() as! SKSpriteNode
+        topLeftBorder.position = CGPoint(x: endBorderWidth/2, y: size.height - borderWidth/2)
+        addChild(topLeftBorder)
+        
+        //Top Right
+        let topRightBorder = bottomLeftBorder.copy() as! SKSpriteNode
+        topRightBorder.position = CGPoint(x: size.width - endBorderWidth/2, y: size.height - borderWidth/2)
+        addChild(topRightBorder)
+    }
     
 }
 //
