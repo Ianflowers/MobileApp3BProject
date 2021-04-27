@@ -45,14 +45,35 @@ class SKGameScreen: SKScene, SKPhysicsContactDelegate {
         }
     }
     
+    func paddle(at position: CGPoint, boundary:CGRect) {
+        let paddle = Paddle(activeArea: boundary)
+        paddle.position = position
+        paddle.delegate = self
+        addChild(paddle)
+        return paddle;
+    }
+    
     // create detection and action on collision
-    //func collision(_ force: CGVector, //get from paddle//) {
-    // }
+    func collision(_ force: CGVector, fromPaddle paddle: Paddle) {
+        let collisionDistanceSqrd = (paddle.radius * paddle.radius) + (puckRadius * puckRadius)
+        let distanceX = paddle.position.x - puck!.position.x
+        let distanceY = paddle.position.y - puck!.position.y
+        let distanceSqrd = (distanceX * distanceX) + (distanceY * distanceY)
+        if distanceSqrd <= collisionDistanceSqrd {
+            puck!.physicsBody!.applyImpulse(force)
+        }
+     }
     
     //Checks for anything off screen
-    //func isOffScreen(node: SKShapeNode) -> Bool {
-        
-    //}
+    func isOffScreen(node: SKShapeNode) -> Bool {
+        return !frame.contains(node.position)
+    }
+    
+    override func update(_ currentTime: TimeInterval) {
+        if isOffScreen(node: puck!) {
+            makePuck()
+        }
+    }
     
     // create boundries for puck
     func makeBorders() {
