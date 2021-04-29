@@ -7,12 +7,12 @@
 
 import Foundation
 import UIKit
-import SpriteKit
 
 class Paddle: UIImageView {
     
     var name: String!
     var minX, minY, maxX, maxY: CGFloat!
+    let radius: CGFloat = 40
 
     func setPaddle(name: String, gesture: UIGestureRecognizer, minX: CGFloat, minY: CGFloat, maxX: CGFloat, maxY: CGFloat) {
         self.name = name
