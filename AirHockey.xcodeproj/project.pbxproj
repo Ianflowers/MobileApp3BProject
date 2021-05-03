@@ -21,6 +21,7 @@
 		6441F887260A78BC0046D61B /* AirHockeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6441F886260A78BC0046D61B /* AirHockeyTests.swift */; };
 		6441F892260A78BC0046D61B /* AirHockeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6441F891260A78BC0046D61B /* AirHockeyUITests.swift */; };
 		6CBFEBDB2615048E00F84F2E /* Scoreboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBFEBDA2615048E00F84F2E /* Scoreboard.swift */; };
+		B088BBAF264075B100C52B68 /* SKGameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B088BBAE264075B100C52B68 /* SKGameScene.sks */; };
 		B0A399D4262F50DA0078F33B /* SKGameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A399D3262F50DA0078F33B /* SKGameScreen.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		6441F891260A78BC0046D61B /* AirHockeyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirHockeyUITests.swift; sourceTree = "<group>"; };
 		6441F893260A78BC0046D61B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CBFEBDA2615048E00F84F2E /* Scoreboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scoreboard.swift; sourceTree = "<group>"; };
+		B088BBAE264075B100C52B68 /* SKGameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SKGameScene.sks; sourceTree = SOURCE_ROOT; };
 		B0A399D3262F50DA0078F33B /* SKGameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKGameScreen.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -101,6 +103,7 @@
 		6410C35E2614F4B70061B600 /* Game Screen */ = {
 			isa = PBXGroup;
 			children = (
+				B088BBAE264075B100C52B68 /* SKGameScene.sks */,
 				B0A399D3262F50DA0078F33B /* SKGameScreen.swift */,
 				6CBFEBDA2615048E00F84F2E /* Scoreboard.swift */,
 				64412A64260D0F6000DA9445 /* GameViewController.swift */,
@@ -292,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B088BBAF264075B100C52B68 /* SKGameScene.sks in Resources */,
 				6441F87C260A78BC0046D61B /* LaunchScreen.storyboard in Resources */,
 				6441F879260A78BC0046D61B /* Assets.xcassets in Resources */,
 				6441F877260A78B80046D61B /* Main.storyboard in Resources */,
