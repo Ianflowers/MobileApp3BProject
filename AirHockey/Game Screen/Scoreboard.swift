@@ -24,16 +24,12 @@ class Scoreboard {
         playerOneScore = 0
         playerTwoScore = 0
 
-        scoreLabel.center = CGPoint(x: 20, y: screenHeight / 2)
+        scoreLabel.center = CGPoint(x: 40, y: screenHeight / 2)
         scoreLabel.textAlignment = .center
         scoreLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi / -2)
-        
-        
-        scoreLabel.text = String("\(playerOneScore)       \(playerTwoScore)")
-        
-        //view.addSubview(playerOneScoreLabel)
-        
-        //
+        scoreLabel.font = scoreLabel.font.withSize(50)
+        scoreLabel.text = String("\(playerOneScore)\t\t\(playerTwoScore)")
     }
+    
     
 }
