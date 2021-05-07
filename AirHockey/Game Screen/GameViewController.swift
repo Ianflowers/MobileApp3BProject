@@ -19,8 +19,6 @@ class GameViewController: UIViewController, UIGestureRecognizerDelegate {
     var currentGame: SKGameScreen?
     
     var pointsToWin: Int = UserDefaults.standard.integer(forKey: "Score")
-    var P1Score: Int = 0
-    var P2Score: Int = 0
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +39,7 @@ class GameViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     func checkForWin() {
-        if P1Score >= pointsToWin || P2Score >= pointsToWin {
+        if scoreboard.P1Score >= pointsToWin || scoreboard.P2Score >= pointsToWin {
             prepare(for: UIStoryboardSegue(identifier: "toResults", source: self, destination: ResultsViewController()), sender: self)
             performSegue(withIdentifier: "toResults", sender: self)
         }
@@ -50,10 +48,10 @@ class GameViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBAction func paddleTouch(_ gesture: UIPanGestureRecognizer) {
         if gesture.view!.accessibilityLabel == "P1" {
             P1Paddle.check(gesture, in: view)
-            P1Score += 1
+            scoreboard.updateScore(whoScored: 1)
         } else {
             P2Paddle.check(gesture, in: view)
-            P2Score += 1
+            scoreboard.updateScore(whoScored: 2)
         }
         checkForWin()
     }
@@ -67,18 +65,18 @@ class GameViewController: UIViewController, UIGestureRecognizerDelegate {
             else {
                 return
             }
-            PauseViewController.P1Score = P1Score
-            PauseViewController.P2Score = P2Score
+            PauseViewController.P1Score = scoreboard.P1Score
+            PauseViewController.P2Score = scoreboard.P2Score
             return
         }
-        ResultsViewController.P1Score = P1Score
-        ResultsViewController.P2Score = P2Score
+        ResultsViewController.P1Score = scoreboard.P1Score
+        ResultsViewController.P2Score = scoreboard.P2Score
     }
     
     @IBAction func newGame(unwindSegue: UIStoryboardSegue) {
         viewDidLoad()
-        P1Score = 0
-        P2Score = 0
+        scoreboard.P1Score = 0
+        scoreboard.P2Score = 0
     }
     
     @IBAction func continueGame(unwindSegue: UIStoryboardSegue) { }
