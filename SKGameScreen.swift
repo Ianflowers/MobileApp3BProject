@@ -46,13 +46,14 @@ class SKGameScreen: SKScene, SKPhysicsContactDelegate {
     
     // Create detection and action on collision
     func collision(_ force: CGVector, fromPaddle paddle: Paddle) {
-        let collisionDistanceSqrd = (paddle.radius * paddle.radius) + (puckRadius * puckRadius)
-        let distanceX = paddle.center.x - puck!.position.x
-        let distanceY = paddle.center.y - puck!.position.y
-        let distanceSqrd = (distanceX * distanceX) + (distanceY * distanceY)
-        if distanceSqrd <= collisionDistanceSqrd {
-            puck!.physicsBody!.applyImpulse(force)
-        }
+        //paddle has no radius property atm
+       // let collisionDistanceSqrd = CGFloat((paddle.radius * paddle.radius)) + (puckRadius * puckRadius)
+        //let distanceX = paddle.center.x - puck!.position.x
+        //let distanceY = paddle.center.y - puck!.position.y
+        //let distanceSqrd = (distanceX * distanceX) + (distanceY * distanceY)
+        //if distanceSqrd <= collisionDistanceSqrd {
+            //puck!.physicsBody!.applyImpulse(force)
+        //}
      }
     
     // Checks for anything off screen
