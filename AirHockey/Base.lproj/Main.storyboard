@@ -175,19 +175,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8O-XC-gLO">
-                                <rect key="frame" x="70" y="436" width="24" height="24"/>
+                                <rect key="frame" x="70" y="411" width="74" height="74"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="x8O-XC-gLO" secondAttribute="height" multiplier="1:1" id="EvQ-qQ-m3V"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" backgroundImage="house.fill" catalog="system"/>
+                                <connections>
+                                    <segue destination="UNZ-jY-LO6" kind="unwind" unwindAction="goHomeWithUnwindSegue:" id="hln-fx-I36"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMb-xo-xx9">
-                                <rect key="frame" x="324" y="437" width="20" height="20"/>
+                                <rect key="frame" x="270" y="410" width="74" height="74"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="xMb-xo-xx9" secondAttribute="height" multiplier="1:1" id="0Zm-Xf-8iA"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="arrow.counterclockwise" catalog="system"/>
+                                <connections>
+                                    <segue destination="UNZ-jY-LO6" kind="unwind" unwindAction="newGameWithUnwindSegue:" id="09i-RJ-cGg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9Zi-8i-NJF"/>
@@ -201,7 +207,9 @@
                             <constraint firstItem="9Zi-8i-NJF" firstAttribute="trailing" secondItem="jJe-EU-Ryx" secondAttribute="trailing" constant="30" id="KqX-cr-oEn"/>
                             <constraint firstItem="9Zi-8i-NJF" firstAttribute="trailing" secondItem="399-rd-Sad" secondAttribute="trailing" constant="30" id="Oku-2L-ibX"/>
                             <constraint firstItem="399-rd-Sad" firstAttribute="top" secondItem="9Zi-8i-NJF" secondAttribute="top" constant="175" id="PoB-7Z-6FK"/>
+                            <constraint firstItem="x8O-XC-gLO" firstAttribute="centerX" secondItem="9Zm-Zn-LwH" secondAttribute="centerX" constant="-100" id="Wcr-E1-uCQ"/>
                             <constraint firstItem="xMb-xo-xx9" firstAttribute="centerY" secondItem="9Zm-Zn-LwH" secondAttribute="centerY" id="iXX-OI-zpv"/>
+                            <constraint firstItem="xMb-xo-xx9" firstAttribute="centerX" secondItem="9Zm-Zn-LwH" secondAttribute="centerX" constant="100" id="j48-WY-2if"/>
                             <constraint firstItem="x8O-XC-gLO" firstAttribute="leading" secondItem="9Zi-8i-NJF" secondAttribute="leading" constant="70" id="yZT-sL-SHe"/>
                         </constraints>
                     </view>
@@ -211,6 +219,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hqe-fd-RbX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="UNZ-jY-LO6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="340.57971014492756" y="-722.54464285714278"/>
         </scene>
