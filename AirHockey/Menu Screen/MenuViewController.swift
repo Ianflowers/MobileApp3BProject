@@ -10,10 +10,12 @@ import UIKit
 class MenuViewController: UIViewController {
 
     @IBOutlet var titleLabel: UILabel!
-
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        if UserDefaults.standard.object(forKey: "Score") == nil {
+            UserDefaults.standard.set(Int(5), forKey: "Score")
+        }
         titleLabel.adjustsFontSizeToFitWidth = true
     }
     

@@ -9,10 +9,14 @@ import UIKit
 
 class PauseViewController: UIViewController {
 
+    @IBOutlet var scoreboard: UILabel!
+    var pointsToWin: Int!
+    var P1Score: Int!
+    var P2Score: Int!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        scoreboard.text = "\(P1Score!) - \(P2Score!)"
     }
     
     /*
