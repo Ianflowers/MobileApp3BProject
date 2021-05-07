@@ -10,26 +10,32 @@ import UIKit
 
 class Scoreboard {
     
-    var playerOneScore: Int
-    var playerTwoScore: Int
-    let screen = UIScreen.main.bounds
-    let screenWidth: CGFloat
+    var P1Score: Int
+    var P2Score: Int
     let screenHeight: CGFloat
+    let scoreLabel: UILabel
     
     init(scoreLabel: UILabel) {
-        screenWidth = screen.size.width
-        screenHeight = screen.size.height
+        self.scoreLabel = scoreLabel
+        screenHeight = UIScreen.main.bounds.size.height
         
-        
-        playerOneScore = 0
-        playerTwoScore = 0
+        P1Score = 0
+        P2Score = 0
 
-        scoreLabel.center = CGPoint(x: 40, y: screenHeight / 2)
-        scoreLabel.textAlignment = .center
-        scoreLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi / -2)
-        scoreLabel.font = scoreLabel.font.withSize(50)
-        scoreLabel.text = String("\(playerOneScore)\t\t\(playerTwoScore)")
+        self.scoreLabel.center = CGPoint(x: 40, y: screenHeight / 2)
+        self.scoreLabel.textAlignment = .center
+        self.scoreLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi / -2)
+        self.scoreLabel.font = scoreLabel.font.withSize(50)
+        self.scoreLabel.text = String("\(P1Score)\t\t\(P2Score)")
     }
     
+    func updateScore(whoScored: Int) {
+        if whoScored == 1 {
+            P1Score += 1
+        } else {
+            P2Score += 1
+        }
+        scoreLabel.text = String("\(P1Score)\t\t\(P2Score)")
+    }
     
 }
