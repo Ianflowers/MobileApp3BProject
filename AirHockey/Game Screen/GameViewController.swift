@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SpriteKit
 
 class GameViewController: UIViewController, UIGestureRecognizerDelegate {
 
@@ -15,10 +16,14 @@ class GameViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet var P2PanGesture: UIPanGestureRecognizer!
     var scoreboard: Scoreboard!
     @IBOutlet var playerScoreLabel: UILabel!
+    var currentGame: SKGameScreen?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+  
+        
         scoreboard = Scoreboard(scoreLabel: playerScoreLabel)
         paddleSetUp()
     }

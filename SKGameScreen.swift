@@ -11,6 +11,7 @@ class SKGameScreen: SKScene, SKPhysicsContactDelegate {
     
     var puck: SKShapeNode?
     let puckRadius: CGFloat = 30
+    weak var viewController: GameViewController?
     
     override func didMove(to view: SKView) {
         makePuck()
