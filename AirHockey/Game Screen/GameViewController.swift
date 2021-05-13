@@ -22,7 +22,7 @@ class GameViewController: UIViewController, UIGestureRecognizerDelegate {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let scene = SKScene(fileNamed: "SKGameScene") {
+        if let scene = SKScene(fileNamed: "GameScene") {
             let skView = self.view as! SKView
             skView.ignoresSiblingOrder = true
             scene.scaleMode = .aspectFill

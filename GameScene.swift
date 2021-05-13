@@ -7,7 +7,7 @@
 
 import SpriteKit
 
-class SKGameScreen: SKScene, SKPhysicsContactDelegate {
+class GameScreen: SKScene, SKPhysicsContactDelegate {
     
     var puck: SKShapeNode?
     let puckRadius: CGFloat = 30
