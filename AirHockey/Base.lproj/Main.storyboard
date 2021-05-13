@@ -77,7 +77,7 @@
         <scene sceneID="4w7-l8-hCp">
             <objects>
                 <viewController id="oNh-Kw-xK7" customClass="GameViewController" customModule="AirHockey" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Nr8-mR-06v">
+                    <view key="view" contentMode="scaleToFill" id="Nr8-mR-06v" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -479,7 +479,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="iYK-7g-njk"/>
+        <segue reference="PdK-St-ml2"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Background" width="500" height="804"/>

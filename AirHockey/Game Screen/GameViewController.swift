@@ -22,8 +22,15 @@ class GameViewController: UIViewController, UIGestureRecognizerDelegate {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-  
+        if let scene = SKScene(fileNamed: "SKGameScene") {
+            let skView = self.view as! SKView
+            skView.ignoresSiblingOrder = true
+            scene.scaleMode = .aspectFill
+            scene.size = skView.frame.size
+            skView.presentScene(scene)
+            //currentGame = scene as?
+            //currentGame?.viewController = self
+        }
         
         scoreboard = Scoreboard(scoreLabel: playerScoreLabel)
         paddleSetUp()
