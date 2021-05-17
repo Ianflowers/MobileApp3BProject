@@ -7,6 +7,7 @@
 
 import UIKit
 import SpriteKit
+import GameplayKit
 
 class GameViewController: UIViewController, UIGestureRecognizerDelegate {
 
@@ -16,21 +17,21 @@ class GameViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet var P2PanGesture: UIPanGestureRecognizer!
     var scoreboard: Scoreboard!
     @IBOutlet var playerScoreLabel: UILabel!
-    var currentGame: SKGameScreen?
+    //var currentGame: GameScene!
     
     var pointsToWin: Int = UserDefaults.standard.integer(forKey: "Score")
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let scene = SKScene(fileNamed: "GameScene") {
-            let skView = self.view as! SKView
-            skView.ignoresSiblingOrder = true
-            scene.scaleMode = .aspectFill
-            scene.size = skView.frame.size
-            skView.presentScene(scene)
-            //currentGame = scene as?
-            //currentGame?.viewController = self
-        }
+        //if let scene = GameScene(fileNamed: "GameScene") {
+        //    let skView = self.view as! SKView
+        //    skView.ignoresSiblingOrder = true
+        //    scene.scaleMode = .aspectFill
+        //    scene.size = skView.frame.size
+        //    skView.presentScene(scene)
+        //    currentGame = scene as? GameScene
+        //    currentGame?.viewController = self
+        //}
         
         scoreboard = Scoreboard(scoreLabel: playerScoreLabel)
         paddleSetUp()
